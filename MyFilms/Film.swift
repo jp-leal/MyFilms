@@ -6,6 +6,7 @@
 //
 import SwiftData
 import Foundation
+import SwiftUI
 
 @Model
 class Film {
@@ -24,4 +25,5 @@ class Film {
         self.critique = critique
         self.rating = rating
     }
+ 
 }

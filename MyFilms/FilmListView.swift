@@ -15,16 +15,32 @@ struct FilmListView: View {
     @State private var createNewBook = false
     var body: some View {
         NavigationStack {
-            
-            List{
-                ForEach(films){ film in
-                    NavigationLink(destination: Text(film.title)) {
-                        //
-                    }
+            Group{
+                if films.isEmpty{
+                    ContentUnavailableView("Enter your first film", systemImage: "film")
                 }
-            }
-            .listStyle(.plain)
-
+                else{
+                    List{
+                        ForEach(films){ film in
+                            NavigationLink(destination: Text(film.title)) {
+                                VStack(alignment: .leading) {
+                                    Text(film.title).font(.title2)
+                                    Text(film.year).foregroundStyle(.secondary)
+                                    if let rating = film.rating{
+                                        HStack{
+                                            ForEach(0..<rating, id: \.self) {
+                                                _ in
+                                                Image(systemName: "star.fill")
+                                                    .foregroundStyle(.yellow)
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .listStyle(.plain)
+                }}
             .navigationTitle("My Films")
             .toolbar {
                 Button{
