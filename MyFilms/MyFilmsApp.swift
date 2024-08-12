@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct MyFilmsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FilmListView()
         }
+        .modelContainer(for: Film.self)
+    }
+    
+    init(){
+        print(URL.applicationSupportDirectory.path(percentEncoded: false))
     }
 }
