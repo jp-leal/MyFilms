@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct FilmListView: View {
-    
+    @Environment(\.modelContext) private var context
     @Query(sort: \Film.title)private var films: [Film]
     
     @State private var createNewBook = false
@@ -38,7 +38,14 @@ struct FilmListView: View {
                                 }
                             }
                         }
+                        .onDelete { indexSet in
+                            indexSet.forEach{index in
+                                let film = films[index]
+                                context.delete(film)
+                            }
+                        }
                     }
+                    
                     .listStyle(.plain)
                 }}
             .navigationTitle("My Films")
