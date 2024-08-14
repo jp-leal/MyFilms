@@ -22,7 +22,9 @@ struct FilmListView: View {
                 else{
                     List{
                         ForEach(films){ film in
-                            NavigationLink(destination: Text(film.title)) {
+                            NavigationLink {
+                               EditFilmView(film: film)
+                            } label: {
                                 VStack(alignment: .leading) {
                                     Text(film.title).font(.title2)
                                     Text(film.year).foregroundStyle(.secondary)

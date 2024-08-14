@@ -13,6 +13,8 @@
 		2FB5D7062C6A861400AB0EAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FB5D7052C6A861400AB0EAA /* Preview Assets.xcassets */; };
 		2FB5D70D2C6A862800AB0EAA /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB5D70C2C6A862800AB0EAA /* Film.swift */; };
 		2FB5D70F2C6A938C00AB0EAA /* FilmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB5D70E2C6A938B00AB0EAA /* FilmView.swift */; };
+		2FEC57D12C6CF0FE00B08A58 /* EditFilmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEC57D02C6CF0FE00B08A58 /* EditFilmView.swift */; };
+		2FEC57D32C6CFBFB00B08A58 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEC57D22C6CFBFB00B08A58 /* RatingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		2FB5D7052C6A861400AB0EAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2FB5D70C2C6A862800AB0EAA /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		2FB5D70E2C6A938B00AB0EAA /* FilmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmView.swift; sourceTree = "<group>"; };
+		2FEC57D02C6CF0FE00B08A58 /* EditFilmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFilmView.swift; sourceTree = "<group>"; };
+		2FEC57D22C6CFBFB00B08A58 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 			children = (
 				2FB5D6FE2C6A861300AB0EAA /* MyFilmsApp.swift */,
 				2FB5D7002C6A861300AB0EAA /* FilmListView.swift */,
+				2FEC57D02C6CF0FE00B08A58 /* EditFilmView.swift */,
+				2FEC57D22C6CFBFB00B08A58 /* RatingsView.swift */,
 				2FB5D70C2C6A862800AB0EAA /* Film.swift */,
 				2FB5D70E2C6A938B00AB0EAA /* FilmView.swift */,
 				2FB5D7022C6A861400AB0EAA /* Assets.xcassets */,
@@ -144,7 +150,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FB5D70F2C6A938C00AB0EAA /* FilmView.swift in Sources */,
+				2FEC57D32C6CFBFB00B08A58 /* RatingsView.swift in Sources */,
 				2FB5D7012C6A861300AB0EAA /* FilmListView.swift in Sources */,
+				2FEC57D12C6CF0FE00B08A58 /* EditFilmView.swift in Sources */,
 				2FB5D70D2C6A862800AB0EAA /* Film.swift in Sources */,
 				2FB5D6FF2C6A861300AB0EAA /* MyFilmsApp.swift in Sources */,
 			);
